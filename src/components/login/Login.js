@@ -59,13 +59,11 @@ function Login() {
             rules={[
               {
                 required: true,
-                message: "Please input your username!",
+                message: "Please input your username",
               },
             ]}
           >
-            <Input
-              prefix={<UserOutlined className="site-form-item-icon" />}
-            />
+            <Input prefix={<UserOutlined className="site-form-item-icon" />} />
           </Form.Item>
 
           <Form.Item
@@ -81,7 +79,9 @@ function Login() {
               },
             ]}
           >
-            <Input.Password prefix={<KeyOutlined className="site-form-item-icon" />}/>
+            <Input.Password
+              prefix={<KeyOutlined className="site-form-item-icon" />}
+            />
           </Form.Item>
 
           <Form.Item
@@ -90,8 +90,12 @@ function Login() {
               span: 16,
             }}
           >
-            <Button  className="button-group"
-            style={style} type="primary" htmlType="submit">
+            <Button
+              className="button-group"
+              style={style}
+              type="primary"
+              htmlType="submit"
+            >
               Submit
             </Button>
           </Form.Item>
