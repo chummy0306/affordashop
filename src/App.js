@@ -12,7 +12,7 @@ class App extends Component {
         {
           username: "fritzie acenas",
           password: "12345678",
-          status: "0"
+          status: "1"
         },
       ],
     };
